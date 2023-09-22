@@ -40,11 +40,11 @@
 
         <div class="buttons">
           <a><button type="button" class="btn btn-primary">Contate-me <i class="ph ph-paper-plane-right"></i></button></a>
-          <a><button type="button" class="btn btn-primary">Meu Currículo <i class="ph ph-download-simple"></i></button></a>
+         <button type="submit" onclick="window.open('../assets/Curriculo.pdf')" class="btn btn-primary">Meu Currículo <i class="ph ph-download-simple"></i></button>
         </div>
       </div>
       <div class="home-image">
-        <img src="../assets/imagens/home.png">
+        <img src="../assets/imagens/eu.jpg">
       </div>
 
     </div>
@@ -55,7 +55,7 @@
       <div class="sobre-content">
         <h1>Sobre Mim</h1>
         <p>Atualmente graduando em Engenharia de Software em Uberlândia-MG.</p>
-        <p>Sou apaixonado por idealizar, conceituar e produzir produtos centrados no cliente...</p>
+        <p>Sou apaixonado por idealizar, conceituar e produzir produtos centrados no cliente.</p>
 
         <div class="stacks">
           <img src="../assets/imagens/html-5.png">
@@ -69,40 +69,51 @@
     </div>
     <div class="projetos">
       <h3>Meus Projetos</h3>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="../assets/imagens/kohala.png" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Kohala Filmes & Séries</h5>
-          <p class="card-text">Um site de informações de filmes, séries e atores.</p>
-          <a target="_blank" href="https://kohalafilmes-omega.vercel.app/" class="btn btn-primary">Visitar</a>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="../assets/imagens/solidy.png" alt="Imagem de capa do card" >
-        <div class="card-body">
-          <h5 class="card-title">Solidy Control</h5>
-          <p class="card-text">Uma página web mobile, para controle de pagamentos e vendas de clientes.</p>
-          <a target="_blank" href="https://solidy.vercel.app/home" class="btn btn-primary">Visitar</a>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a target="_blank" href="https://kohalafilmes-omega.vercel.app/"><img src="../assets/imagens/kohala.png" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kohala Filmes & Séries</h5>
+              <p>Um site de informações de filmes, séries e atores.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a target="_blank" href="https://infotecelulares.vercel.app/"><img src="../assets/imagens/infotec.png" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Infotec Celulares</h5>
+              <p>Uma Landing Page de uma assistência técnica de celulares.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a target="_blank" href="https://solidy.vercel.app/home"><img src="../assets/imagens/solidy.png" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Solidy Control</h5>
+              <p>Uma página web mobile, para controle de pagamentos e vendas de clientes.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a target="_blank" href="../assets/imagens/pokedex.png"><img src="../assets/imagens/pokedex.png" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kanto Pokedex</h5>
+              <p>Um site contendo informações de pokemons.</p>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="../assets/imagens/infotec.png" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Infotec Celulares</h5>
-          <p class="card-text">Uma Landing Page de uma assistência técnica de celulares.</p>
-          <a target="_blank" href="https://infotecelulares.vercel.app/" class="btn btn-primary">Visitar</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="../assets/imagens/pokedex.png" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Kanto Pokedex</h5>
-          <p class="card-text">Uma site contendo informações de pokemons.</p>
-          <a target="_blank" href="https://kantopokedex.vercel.app/home" class="btn btn-primary">Visitar</a>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
     </div>
   </div>
