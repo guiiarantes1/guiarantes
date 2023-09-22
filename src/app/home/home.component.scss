@@ -1,0 +1,198 @@
+.main {
+  background-color: #100e1a;
+  color: white;
+  padding: 10px 5%;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    .nome {
+    }
+    .menu {
+      .nav {
+        display: flex;
+        align-content: center;
+        li {
+        }
+        a {
+          margin: 10px 15px;
+          padding: 0;
+          text-decoration: none;
+          color: white;
+          &:hover {
+            cursor: pointer;
+            border-bottom: solid 1px white;
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+  .body {
+    margin-top: 50px;
+    .home {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 50px;
+      .home-content {
+        width: 50%;
+        h5 {
+          font-size: 1.1rem;
+          margin-bottom: 20px;
+        }
+        h1 {
+          font-size: 2.5rem;
+          margin-bottom: 5px;
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 25px;
+          line-height: 1.5rem;
+        }
+        a {
+          width: 30px;
+          height: 30px !important;
+          margin-right: 15px;
+        }
+        img {
+          width: 30px;
+          margin-bottom: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .buttons {
+          margin-top: 35px;
+          margin-bottom: 20px;
+
+          .btn {
+            background-color: #6e31df;
+            border: #6e31df;
+            padding: 15px;
+            margin: 5px;
+            i {
+              margin-top: 2px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      .home-image {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .sobre {
+      display: flex;
+      align-items: center;
+      padding-bottom: 50px;
+      justify-content: space-between;
+      .sobre-img {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      .sobre-content {
+        width: 50%;
+        h1 {
+          font-size: 1.8rem;
+          font-style: italic;
+          margin-bottom: 30px;
+        }
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 15px;
+          line-height: 1.6rem;
+        }
+
+        .stacks {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          margin-top: 30px;
+          display: flex;
+          img {
+            width: 15%;
+            margin: 0 15px 20px 0;
+          }
+        }
+      }
+    }
+
+    .projetos {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+      justify-content: center;
+      h3 {
+        width: 100%;
+        margin: 30px 0 50px 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+      .card {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1d1836;
+        color: white;
+        border-radius: 10px;
+        flex-grow: 1;
+
+        img {
+          padding: 3px;
+          border-radius: 10px;
+          width: 419px;
+          height: 238px;
+        }
+        h5 {
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+        p {
+          text-align: center;
+          font-size: 0.9rem;
+          font-style: italic;
+          margin-bottom: 25px;
+        }
+
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          a {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #6e31df;
+            border: #6e31df;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 25px;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
