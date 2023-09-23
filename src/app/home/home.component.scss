@@ -1,7 +1,10 @@
-.main {
+.principal {
   background-color: #01011a;
-  color: white;
+}
+.main {
+  margin: auto;
   padding: 10px 5%;
+  color: white;
   .header {
     display: flex;
     justify-content: space-between;
@@ -87,8 +90,11 @@
       }
       .home-image {
         width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img {
-          width: 75%;
+          width: 350px;
           border-radius: 100%;
           margin: auto;
           border: solid 5px #3157df;
@@ -104,7 +110,7 @@
         width: 40%;
 
         img {
-          width: 90%;
+          width: 80%;
         }
       }
       .sobre-content {
@@ -127,7 +133,7 @@
           margin-top: 30px;
           display: flex;
           img {
-            width: 15%;
+            width: 60px;
             margin: 0 15px 20px 0;
           }
         }
@@ -142,7 +148,7 @@
       h3 {
         width: 100%;
         margin: 30px 0 50px 0;
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 500;
       }
       .carousel {
@@ -157,16 +163,14 @@
           margin-bottom: 7px;
           button {
             background-color: #0d3deb;
-
-
           }
         }
         button {
           opacity: 1;
-          &:hover{
+          &:hover {
             background-color: #01011a4e;
           }
-          span{
+          span {
             margin-top: 50px;
             width: 20px;
           }
@@ -177,10 +181,9 @@
             background-image: url(/assets/imagens/arrow.png);
             transform: rotate(180deg);
           }
-
         }
-        .carousel-inner{
-          .carousel-caption{
+        .carousel-inner {
+          .carousel-caption {
             background-color: rgba(0, 0, 0, 0.683);
             width: fit-content;
             margin: auto;
@@ -188,11 +191,11 @@
             padding: 8px;
             margin-bottom: 20px;
 
-            h5{
+            h5 {
               font-weight: 500;
               font-size: 1.3rem;
             }
-            p{
+            p {
               font-style: italic;
               margin-top: 10px;
               font-size: 1.1rem;
@@ -200,6 +203,88 @@
           }
         }
       }
+      .legenda {
+        width: 1200px;
+        text-align: right;
+        margin-top: 5px;
+      }
     }
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      justify-content: space-between;
+      h3 {
+        width: 100%;
+        margin: 30px 0 0 0;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+      .contatos-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h5{
+          font-size: 1.1rem;
+          font-style: italic;
+          .emoji{
+            font-size:25px;
+          }
+        }
+        h4{
+          font-size: 1.6rem;
+          font-weight: 500;
+          margin: 15px 0;
+        }
+        p{
+          font-size: 1.2rem;
+          line-height: 2rem;
+          i{
+            margin-right: 5px;
+          }
+        }
+        .redes{
+          margin-bottom: 15px;
+        }
+        .contatos-social{
+          a {
+            width: 30px;
+            height: 30px !important;
+            margin-right: 15px;
+          }
+          img {
+            width: 30px;
+            margin-bottom: 20px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .contatos-image {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 500px !important;
+        }
+      }
+      .logo{
+        width: 100%;
+        margin: 15px;
+        p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main {
+    width: 1920px !important;
   }
 }
