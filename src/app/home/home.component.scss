@@ -11,15 +11,18 @@
     align-items: center;
     height: 50px;
     .nome {
+      font-size: 1.4rem;
+      font-family: 'Rowdies', cursive;
     }
     .menu {
       .nav {
         display: flex;
         align-content: center;
         li {
+          font-size: 1.2rem;
         }
         a {
-          margin: 10px 15px;
+          margin: 10px 12px;
           padding: 0;
           text-decoration: none;
           color: white;
@@ -29,6 +32,17 @@
             transform: scale(1.05);
           }
         }
+      }
+      .btn {
+        display: none;
+      }
+      .offcanvas {
+        width: 40% !important;
+        background-color: #01011a;
+        color: white;
+      }
+      ::ng-deep .modal-backdrop {
+        width: 60% !important;
       }
     }
   }
@@ -81,6 +95,8 @@
             border: #3157df;
             padding: 15px;
             margin: 5px;
+            width: 156px !important;
+
             i {
               margin-top: 2px;
               margin-left: 5px;
@@ -97,7 +113,16 @@
           width: 350px;
           border-radius: 100%;
           margin: auto;
-          border: solid 5px #3157df;
+          background: rgb(1, 5, 26);
+          background: linear-gradient(
+            42deg,
+            rgba(1, 5, 26, 1) 0%,
+            rgba(49, 87, 223, 1) 33%
+          );
+          padding: 6px;
+          -webkit-box-shadow: 1px 0px 14px 0px rgba(49, 87, 223, 0.64);
+          -moz-box-shadow: 1px 0px 14px 0px rgba(49, 87, 223, 0.64);
+          box-shadow: 1px 0px 14px 0px rgba(49, 87, 223, 0.64);
         }
       }
     }
@@ -225,29 +250,29 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        h5{
+        h5 {
           font-size: 1.1rem;
           font-style: italic;
-          .emoji{
-            font-size:25px;
+          .emoji {
+            font-size: 25px;
           }
         }
-        h4{
+        h4 {
           font-size: 1.6rem;
           font-weight: 500;
           margin: 15px 0;
         }
-        p{
+        p {
           font-size: 1.2rem;
           line-height: 2rem;
-          i{
+          i {
             margin-right: 5px;
           }
         }
-        .redes{
+        .redes {
           margin-bottom: 15px;
         }
-        .contatos-social{
+        .contatos-social {
           a {
             width: 30px;
             height: 30px !important;
@@ -272,10 +297,10 @@
           width: 90% !important;
         }
       }
-      .logo{
+      .logo {
         width: 100%;
         margin: 15px;
-        p{
+        p {
           text-align: center;
         }
       }
@@ -291,60 +316,148 @@
 
 @media screen and (max-width: 850px) {
   .home {
-    flex-direction:column-reverse !important;
-    .home-image{
+    flex-direction: column-reverse !important;
+    .home-image {
       width: 90% !important;
-       margin-bottom: 50px;
-       img{
+      margin-bottom: 50px;
+      img {
         width: 300px !important;
-       }
+      }
     }
-    .home-content{
+    .home-content {
       width: 90% !important;
     }
   }
-  .sobre{
+  .sobre {
     flex-direction: column;
-    .sobre-img{
+    .sobre-img {
       display: flex !important;
       width: 90% !important;
       justify-content: center !important;
       margin-bottom: 50px !important;
 
-      img{
+      img {
         width: 80% !important;
       }
     }
-    .sobre-content{
+    .sobre-content {
       width: 90% !important;
     }
-    .stacks{
-      img{
+    .stacks {
+      img {
         width: 40px !important;
       }
     }
   }
-  .footer{
+  .projetos {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .footer {
+    width: 90% !important;
     flex-direction: column !important;
-    h3{
+    margin: auto !important;
+    h3 {
       order: 1;
       margin-bottom: 30px !important;
     }
-    .contatos-content{
+    .contatos-content {
       order: 3;
       width: 90% !important;
+      h5 {
+        margin-bottom: 20px;
+      }
+      h4 {
+        margin: 15px 0 20px 0 !important;
+      }
+      p {
+        margin-bottom: 5px !important;
+      }
+      .redes{
+        margin-top: 30px !important;
+      }
     }
-    .contatos-image{
+    .contatos-image {
       width: 90% !important;
       order: 2;
       margin: auto !important;
       margin-bottom: 50px !important;
     }
-    .logo{
+    .logo {
       order: 4;
       width: 100% !important;
       margin: 0 !important;
       margin-top: 15px !important;
     }
+
+  }
+}
+@media screen and (max-width: 650px) {
+  .header {
+    .nav {
+      display: none !important;
+    }
+    .btn {
+      display: flex !important;
+      padding: 8px !important;
+      width: 50px;
+      font-size: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+    .offcanvas-header {
+      color: white !important;
+      display: flex !important;
+      align-items: center !important;
+      h5 {
+        font-size: 1.5rem;
+      }
+
+      button {
+        background-image: url(/assets/imagens/x.png);
+        font-size: 15px;
+        color: white;
+        --bs-btn-close-bg: !important;
+        opacity: 1 !important;
+        margin: 0 !important;
+      }
+    }
+    .offcanvas-body {
+      color: white !important;
+      height: fit-content !important;
+      padding: 0 16px;
+      .nav-canva {
+        color: white !important;
+        li {
+          margin: 25px 10px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .home {
+    .home-image {
+      img {
+        width: 250px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .home-content{
+    .buttons{
+      text-align: center !important;
+      margin: 0 0 20px 0 !important;
+      a{
+        margin: 0 !important;
+      }
+      .btn{
+        margin-top: 20px !important;
+        padding: 10px 0 !important;
+
+      }
+    }
+
   }
 }

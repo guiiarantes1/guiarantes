@@ -7,23 +7,65 @@
       <div class="menu">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre Mim</a>
+            <a class="nav-link" href="#sobre">Sobre Mim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projetos</a>
+            <a class="nav-link" href="#projetos">Projetos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="#footer">Contato</a>
           </li>
         </ul>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+        <i class="ph ph-list"></i>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav-canva">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre Mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projetos">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="body">
-      <div class="home">
+      <div class="home" id="home">
         <div class="home-content">
           <h5>Olá!</h5>
           <h1>Guilherme Arantes</h1>
@@ -79,7 +121,7 @@
           <img src="../assets/imagens/eu.jpg" />
         </div>
       </div>
-      <div class="sobre">
+      <div class="sobre" id="sobre">
         <div class="sobre-img">
           <img src="../assets/imagens/sobre.png" />
         </div>
@@ -102,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="projetos">
+      <div class="projetos" id="projetos">
         <h3>Meus Projetos</h3>
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -207,10 +249,13 @@
         </div>
         <span class="legenda">Clique para visualizar o projeto.</span>
       </div>
-      <div class="footer">
+      <div class="footer" id="footer">
         <h3>Contatos</h3>
         <div class="contatos-content">
-          <h5>Me chame pra conversar ou apenas dizer oi! <span class="emoji">👋</span> </h5>
+          <h5>
+            Me chame pra conversar ou apenas dizer oi!
+            <span class="emoji">👋</span>
+          </h5>
           <h4>Informações</h4>
           <p><i class="ph ph-envelope-simple"></i> guii_arantes@hotmail.com</p>
           <p><i class="ph ph-phone-call"></i> (34) 98440-8672</p>
