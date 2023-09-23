@@ -3,16 +3,20 @@
 }
 .main {
   margin: auto;
-  padding: 10px 5%;
+  padding: 0 3%;
   color: white;
   .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #01011af2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 70px;
     .nome {
       font-size: 1.4rem;
-      font-family: 'Rowdies', cursive;
+      font-family: "Rowdies", cursive;
     }
     .menu {
       .nav {
@@ -47,7 +51,7 @@
     }
   }
   .body {
-    margin-top: 50px;
+    margin-top: 40px;
     .home {
       display: flex;
       justify-content: space-between;
@@ -70,7 +74,7 @@
         p {
           font-size: 1.2rem;
           margin-bottom: 25px;
-          line-height: 1.5rem;
+          line-height: 1.6rem;
         }
         a {
           width: 30px;
@@ -147,7 +151,6 @@
         }
         p {
           font-size: 1.2rem;
-          margin-bottom: 15px;
           line-height: 1.6rem;
         }
 
@@ -180,14 +183,17 @@
         width: 1200px;
         margin: auto;
         .carousel-indicators {
-          background-color: #000000c9;
+          background-color: #000000da;
           border-radius: 5px;
           width: fit-content;
           margin: auto;
           padding: 0 5px;
           margin-bottom: 7px;
           button {
-            background-color: #0d3deb;
+            background-color: #092485;
+          }
+          .active{
+            background-color: #073af3;
           }
         }
         button {
@@ -315,6 +321,10 @@
 }
 
 @media screen and (max-width: 850px) {
+  .header {
+    width: 90%;
+    margin: auto;
+  }
   .home {
     flex-direction: column-reverse !important;
     .home-image {
@@ -373,7 +383,7 @@
       p {
         margin-bottom: 5px !important;
       }
-      .redes{
+      .redes {
         margin-top: 30px !important;
       }
     }
@@ -388,11 +398,16 @@
       width: 100% !important;
       margin: 0 !important;
       margin-top: 15px !important;
+      margin-bottom: 5px !important;
     }
-
   }
 }
-@media screen and (max-width: 650px) {
+@media (max-width: 768px){
+  .d-none{
+    display: block !important;
+  }
+}
+@media screen and (max-width: 700px) {
   .header {
     .nav {
       display: none !important;
@@ -443,21 +458,44 @@
     }
   }
 }
+.carousel-caption{
+  h5{
+    font-size: 1rem !important;
+  }
+  p{
+    margin-top: 2px !important;
+    font-size: 0.8rem;
+  }
+}
 
 @media screen and (max-width: 430px) {
-  .home-content{
-    .buttons{
+  .home-content {
+    .buttons {
       text-align: center !important;
       margin: 0 0 20px 0 !important;
-      a{
+      a {
         margin: 0 !important;
       }
-      .btn{
+      .btn {
         margin-top: 20px !important;
         padding: 10px 0 !important;
-
       }
     }
-
+  }
+  .carousel-indicators{
+    margin-bottom: 2px !important;
+    button{
+      border: 1 !important;
+    }
+  }
+  .carousel-caption{
+    margin-bottom: 5px !important;
+    h5{
+      font-size: 0.8rem !important;
+    }
+    p{
+      margin-top: 1px !important;
+      font-size: 0.7rem !important;
+    }
   }
 }
